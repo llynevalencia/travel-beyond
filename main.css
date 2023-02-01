@@ -1,0 +1,92 @@
+:root {
+    --theme-color: #00060A;
+    --font-color: #f4f4f4;
+    --primary-color: #E12A0E;
+    --secondary-color: #165BB7;
+
+    --body-font: 'Manrope', sans-serif;
+    --title-font: 'Michroma', sans-serif;
+
+    font-size: 16px;
+
+    --font-size-title-m-m: 1.75rem;
+    --font-size-title-m-l: 2rem;
+    --font-size-body-m-m: 1rem;
+    --font-size-body-m-l: 1.2rem;
+
+    --font-size-title-d-m: 2.8rem;
+    --font-size-title-d-l: 3.6rem;
+    --font-size-body-d-s: 1rem;
+    --font-size-body-d-m: 1.4rem;
+    --font-size-body-d-l: 1.7rem;
+
+    --font-weight-bold: 500;
+
+    --cta-padding-1200: 1% 16%;
+    --cta-padding-500: 1% 8%;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--theme-color);
+    color: var(--font-color);
+}
+
+h1 {
+    font-family: var(--title-font);
+}
+
+h2 {
+    font-family: var(--title-font);
+    font-size: var(--font-size-title-d-m);
+}
+
+/* CSS Reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    color: var(--font-color);
+}
