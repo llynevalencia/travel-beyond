@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
     <title>Travel Beyond</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEH5696095"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KEH5696095');
+    </script>
 </head>
+
 <body>
     <section class="front-page">
         <section class="front-page__text">
@@ -106,10 +116,10 @@
 
                 <h2>Reserva tu viaje</h2>
 
-                <form class="section4__form">
+                <form class="section4__form" id="contact_form">
                     <p>Completa los datos del formulario y te contactaremos para realizar tu reserva.</p>
-                    <input class="section4__form-input" type="text" placeholder="Nombre">
-                    <input class="section4__form-input" type="text" placeholder="Email">
+                    <input class="section4__form-input" type="text" placeholder="Nombre" id="name">
+                    <input class="section4__form-input" type="text" placeholder="Email" id="email">
                     <input class="main-cta main-cta__submit" type="submit">
                 </form>
 
@@ -129,7 +139,8 @@
     </footer>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="script.js"></script>
+    <script src="fb.js"></script>
 </body>
 </html>
